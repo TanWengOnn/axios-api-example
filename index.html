@@ -10,18 +10,7 @@
   </head>
   <body>
     <button id="get-btn">Get Comment</button>
-    <script>
-      const getBtn = document.querySelector("#get-btn");
-      getBtn.addEventListener("click", () => {
-        axios
-          .get(`https://jsonplaceholder.typicode.com/comments`)
-          .then((response) => {
-            console.log(response.data);
-          })
-          .catch((error) => {
-            console.log(error);
-          });
-      });
-    </script>
+    <button id="post-btn">Post Comment</button>
+    <script src="index.js"></script>
   </body>
 </html>
